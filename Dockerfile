@@ -11,7 +11,7 @@ RUN a2enmod php5
 # Update our apache sites available with the config we created
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default
 
-# expose port 8080 so that our webserver can respond to requests.
+# expose port 80 so that our webserver can respond to requests.
 EXPOSE 80
 
 # Manually set the apache environment variables in order to get apache to work immediately.
